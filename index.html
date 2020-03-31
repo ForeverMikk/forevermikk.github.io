@@ -4,39 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Molina Pérez</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <section>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
         <div class="content">
-            <div>
-                <h2>Michael Molina Pérez</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero totam non, ipsum repellat provident culpa nisi nobis reprehenderit ut molestiae facilis, consequuntur asperiores ipsa odit porro nesciunt qui? Animi, possimus? </p>
-                <a href="#">Learn More</a>
-            </div>
+            <h2>Hello World,<br>I'm <span>Michael Molina</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sint officia accusantium ducimus, earum quo perferendis quos hic cupiditate et iusto ab, fuga minima at quidem similique? Laborum, doloremque tempore.</p>
+            <a href="#">Know More</a>
         </div>
-        <div class="imgBx">
-            <img src="./asstes/img/img.png" alt="">
-        </div>
-        <ul class="nav" id="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#" class="active">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
         <ul class="sci">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Linkedin</a></li>
+            <li><a href="#"><img src="./assets/img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./assets/img/linkedin.png" alt=""></a></li>
+            <li><a href="#"><img src="./assets/img/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="./assets/img/youtube.png" alt=""></a></li>
         </ul>
     </section>
-    <span class="menu-icon" id="toggle" onclick="menuToggle()"></span>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
     <script type="text/javascript">
-        function menuToggle(){
-            let nav = document.getElementById("nav");
-            nav.classList.toggle('active')
-            let toggle = document.getElementById("toggle");
-            toggle.classList.toggle('active')
+        function toggle(){
+            let sec = document.getElementById('sec');
+            let nav = document.getElementById('navigation')
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
         }
     </script>
 </body>
